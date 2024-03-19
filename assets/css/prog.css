@@ -123,7 +123,7 @@ h3 {
 }
 
 .guide-slot_card {
-    background: rgb(122, 32, 32, 0.85);
+    background: rgb(46, 26, 70, 0.85);
     /* background: #0a0a0a;
     border: 1px solid var(--border); */
     border-radius: 0.8rem;
@@ -135,7 +135,7 @@ h3 {
 }
 
 .guide-slot_card:hover {
-    background: rgb(122, 32, 32, 0.9);
+    background: rgb(46, 26, 70, 0.95);
     border-color: #b3b3b3;
 }
 

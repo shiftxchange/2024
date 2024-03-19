@@ -12,13 +12,8 @@ a {
   text-decoration: none;
 }
 
-.credits a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 a:hover {
-  color: rgb(66, 46, 90);
+  color: #fc8129;
   text-decoration: none;
 }
 
@@ -38,12 +33,12 @@ table {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(46, 26, 70, 0.6);
+  background-color: rgb(122, 32, 32, 0.6);
 
 }
 
 tr:nth-child(even):hover {
-  background: rgb(46, 26, 70, 0.5);
+  background: rgb(122, 32, 32, 0.5);
   color: #000000;
 }
 
@@ -56,11 +51,11 @@ tr:nth-child(even):hover {
 }
 
 .time {
-  background-color: rgb(46, 26, 70, 0.7);
+  background-color: rgb(122, 32, 32, 0.7);
 }
 
 .time1 {
-  background-color: rgb(46, 26, 70, 0.75);
+  background-color: rgb(122, 32, 32, 0.75);
 }
 
 /*--------------------------------------------------------------
@@ -73,7 +68,7 @@ tr:nth-child(even):hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgb(46, 26, 70, 0.9);
+  background: rgb(122, 32, 32, 0.9);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -113,7 +108,7 @@ tr:nth-child(even):hover {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(46, 26, 70, 0.9);
+  background: rgba(122, 32, 32, 0.9);
 }
 
 #header.header-transparent {
@@ -121,7 +116,7 @@ tr:nth-child(even):hover {
 }
 
 #header.header-scrolled {
-  background: rgb(46, 26, 70, 0.9);
+  background: rgb(122, 32, 32, 0.9);
 }
 
 #header .logo h1 {
@@ -138,44 +133,16 @@ tr:nth-child(even):hover {
   text-decoration: none;
 }
 
-/* #header .logo h1 a:hover {
+#header .logo h1 a:hover {
   color: #2a2c39;
   text-decoration: none;
-} */
+}
 
 #header .logo img {
   padding: 0;
   margin: 0;
   max-height: 40px;
 }
-
-.logo {
-  position: relative;
-  display: inline-block;
-}
-
-.logo-link {
-  position: relative;
-  display: inline-block;
-}
-
-.logo .hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0; /* Initially transparent */
-  transition: opacity 0.2s ease;
-}
-
-.logo:hover .hover-image {
-  opacity: 1;
-}
-
-.logo .normal-image {
-  display: block;
-  opacity: 1;
-}
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -224,7 +191,7 @@ tr:nth-child(even):hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: #58595b;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -409,7 +376,7 @@ j .navbar .dropdown ul a i {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, rgb(46, 26, 70) 0%, rgb(96, 96, 114) 100%);
+  background: linear-gradient(0deg, rgb(122, 32, 32) 0%, rgb(170, 64, 73) 100%);
   padding: 0;
 }
 
@@ -598,8 +565,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  /* lighter shade of indigo */
-  background: rgb(66, 46, 90);
+  background: #fd9042;
   margin: 4px 10px;
 }
 
@@ -644,7 +610,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: rgb(66, 46, 90);
+  color: #ef6603;
   line-height: 1;
 }
 
@@ -664,14 +630,14 @@ section {
   line-height: 1;
   color: #fff;
   background: #ffffff;
-  color: rgb(46, 26, 70);
+  color: rgb(122, 32, 32);
   animation-delay: 0.8s;
   margin-top: 6px;
   border: 2px solid #7a2020;
 }
 
 .about .content .btn-learn-more:hover {
-  background: rgb(46, 26, 70);
+  background: rgb(122, 32, 32);
   color: #fff;
   text-decoration: none;
 }
@@ -791,7 +757,7 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: rgb(46, 26, 70, 0.9);
+  background: rgb(122, 32, 32, 0.9);
 }
 
 .cta .cta-btn:hover {
@@ -1421,11 +1387,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: rgb(68, 69, 71);
+  color: rgb(122, 32, 32, 0.9);
   float: left;
   width: 44px;
   height: 44px;
-  background: rgb(156, 136, 180);
+  background: #ffecde;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1456,7 +1422,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: rgb(46, 26, 70, 0.9);
+  background: rgb(122, 32, 32, 0.9);
   color: #fff;
 }
 
@@ -1562,7 +1528,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgb(46, 26, 70, 0.9);
+  background: rgb(122, 32, 32, 0.9);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
