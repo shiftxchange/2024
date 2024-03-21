@@ -1625,6 +1625,9 @@ section {
   font-size: 13px;
 }
 
+/*--------------------------------------------------------------
+# Speaker Page
+--------------------------------------------------------------*/
 .speaker-row {
   display: flex; /* Make the row a flex container */
 }
