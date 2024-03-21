@@ -1587,3 +1587,12 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.speaker-row {
+  display: flex; /* Make the row a flex container */
+}
+
+.speaker-description {
+  flex: 1; /* Allow description to take up remaining space */
+  text-align: justify; /* Justify the text within the description */
+}
