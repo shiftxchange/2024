@@ -5,19 +5,16 @@
 
 .banner {
     position: relative;
-    height: 0; /* Set initial height to 0 */
-    padding-top: 30%; /* Adjust the aspect ratio to make the banner smaller */
-    overflow: hidden; /* Hide any overflow content */
+    overflow: hidden;
 }
 
-.banner img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.banner-img {
+    display: block;
     width: 100%;
-    height: 100%; /* Cover the entire container */
-    object-fit: cover; /* Ensure the image covers the entire container */
+    max-height: 450px; /* Adjust this value to your desired height */
+    object-fit: cover;
 }
+
 
 .overlay {
     position: absolute;
@@ -26,11 +23,24 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    color: #fff;
+    z-index: 1; /* Ensure overlay is below the logo */
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%; /* Set width to 15% of the banner */
+    height: 100%;
     display: flex;
-    justify-content:end;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 2; /* Ensure logo is above the overlay */
+}
+
+.logo-overlay img {
+    max-width: 100%; /* Ensure the logo image doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 
@@ -50,12 +60,26 @@
     aspect-ratio: 16 / 9; /* Set the aspect ratio to 16:9 */
 }
 
+@media (max-width: 576px) {
+    .logo-overlay {
+        width: 40%; 
+    }
+}
+
+@media (min-width: 576px) {
+    .logo-overlay {
+        width: 40%; 
+    }
+}
 
 @media (min-width: 768px) {
     .embed-container iframe {
         width:600px;
         height: 450px; 
     }
+    /* .logo-overlay {
+        width: 35%; 
+    } */
 }
 
 @media (min-width: 1024px) {
@@ -63,4 +87,7 @@
         width:800px;
         height: 450px; 
     }
+    /* .logo-overlay {
+        width: 35%; 
+    } */
 }
