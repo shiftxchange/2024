@@ -253,12 +253,9 @@ tr:nth-child(even):hover {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  background: #58595b;
-  color: #ffffff;
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+  background: #ffffff;
+  color: rgb(66, 46, 90);
 }
 
 .navbar .dropdown ul {
@@ -295,7 +292,8 @@ j .navbar .dropdown ul a i {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #fff;
+  color: rgb(66, 46, 90);
+  background: #f3f3f3;
 }
 
 .navbar .dropdown:hover>ul {
