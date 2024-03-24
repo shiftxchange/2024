@@ -11,7 +11,7 @@
 .banner-img {
     display: block;
     width: 100%;
-    max-height: 450px; /* Adjust this value to your desired height */
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -22,25 +22,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    z-index: 1; /* Ensure overlay is below the logo */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .logo-overlay {
     position: absolute;
     top: 0;
     right: 0;
-    width: 35%; /* Set width to 15% of the banner */
+    width: 35%;
     height: 100%;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 2; /* Ensure logo is above the overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
 .logo-overlay img {
-    max-width: 100%; /* Ensure the logo image doesn't exceed the width of its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 
 
@@ -57,7 +57,7 @@
 
 .embed-container iframe {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Set the aspect ratio to 16:9 */
+    aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 576px) {
@@ -77,9 +77,6 @@
         width:600px;
         height: 450px; 
     }
-    /* .logo-overlay {
-        width: 35%; 
-    } */
 }
 
 @media (min-width: 1024px) {
@@ -87,7 +84,4 @@
         width:800px;
         height: 450px; 
     }
-    /* .logo-overlay {
-        width: 35%; 
-    } */
 }
