@@ -3,7 +3,7 @@ Bootstrap v5.3.2
 General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #444444;
 }
 
@@ -1635,4 +1635,15 @@ section {
 .speaker-description {
   flex: 1; /* Allow description to take up remaining space */
   text-align: justify; /* Justify the text within the description */
+}
+
+
+.speaker-container img {
+  border-radius: 50%;
+}
+
+.speaker-container h5 {
+  justify-content: center;
+  display: flex; 
+  text-align: center;
 }
