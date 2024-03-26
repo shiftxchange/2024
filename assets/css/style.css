@@ -44,7 +44,7 @@ h6 {
 }
 
 /* programme table colors */
-table {
+/* table {
   padding: 8px;
   border-collapse: collapse;
 }
@@ -73,12 +73,12 @@ tr:nth-child(even):hover {
 
 .time1 {
   background-color: rgb(46, 26, 70, 0.75);
-}
+} */
 
 /*--------------------------------------------------------------
 # Registration Table colors
 --------------------------------------------------------------*/
-.table-striped-custom {
+/* .table-striped-custom {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
@@ -93,7 +93,7 @@ tr:nth-child(even):hover {
 
 .table-striped-custom tbody tr:hover:nth-of-type(odd) {
   background-color: rgba(46, 26, 70, 0.85);
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button
