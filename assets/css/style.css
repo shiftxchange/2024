@@ -612,6 +612,15 @@ section {
   padding-bottom: 40px;
 }
 
+.section-title h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  font-family: "Poppins", sans-serif;
+  color: #2a2c39;
+}
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
