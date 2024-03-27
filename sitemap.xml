@@ -36,4 +36,8 @@
         <loc>https://shiftxchange.github.io/2024/committees.html</loc>
         <priority>0.50</priority>
     </url>
+    <url>
+        <loc>https://shiftxchange.github.io/2024/journals.html</loc>
+        <priority>0.50</priority>
+    </url>
 </urlset>
