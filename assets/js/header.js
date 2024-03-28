@@ -15,6 +15,7 @@ header.innerHTML = `
         <ul>
           <li><a href="abstracts.html">Call for Abstracts</a></li>
           <li><a href="submission.html">Submission Information</a></li>
+          <li><a href="journals.html">Associated Journals</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#"><span>Programme</span> <i class="bi bi-chevron-down"></i></a>
