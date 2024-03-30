@@ -21,11 +21,12 @@ a {
   color: blue;
   text-decoration: none;
 }
-.links a:hover{
+
+.links a:hover {
   text-decoration: underline;
 }
 
-.breadnav:hover{
+.breadnav:hover {
   color: rgb(66, 46, 90);
 }
 
@@ -253,7 +254,10 @@ tr:nth-child(even):hover {
   margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
   background: #ffffff;
   color: rgb(66, 46, 90);
 }
@@ -390,7 +394,8 @@ j .navbar .dropdown ul a i {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: rgb(46, 26, 70, 0.8);;
+  color: rgb(46, 26, 70, 0.8);
+  ;
 }
 
 .navbar-mobile .getstarted,
@@ -436,6 +441,14 @@ j .navbar .dropdown ul a i {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#heroTravel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* background: linear-gradient(0deg, rgb(46, 26, 70) 0%, rgb(96, 96, 114) 100%); */
+  padding: 0;
+}
+
 #hero {
   width: 100%;
   overflow: hidden;
@@ -455,6 +468,17 @@ j .navbar .dropdown ul a i {
   padding-top: 60px;
 }
 
+#heroTravel .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 35vh;
+  /* padding-top: 60px; */
+}
+
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
@@ -470,12 +494,21 @@ j .navbar .dropdown ul a i {
 }
 
 #hero .carousel-control-prev,
-#hero .carousel-control-next {
+#hero .carousel-control-next,
+#heroTravel .carousel-control-prev,
+#heroTravel .carousel-control-next {
   width: 10%;
 }
 
+#heroTravel .carousel-control-prev,
+#heroTravel .carousel-control-next {
+  color: #2e1a46;
+}
+
 #hero .carousel-control-next-icon,
-#hero .carousel-control-prev-icon {
+#hero .carousel-control-prev-icon,
+#heroTravel .carousel-control-next-icon,
+#heroTravel .carousel-control-prev-icon {
   background: none;
   font-size: 48px;
   line-height: 1;
@@ -517,7 +550,9 @@ j .navbar .dropdown ul a i {
 }
 
 @media (max-width: 768px) {
-  #hero .carousel-container {
+
+  #hero .carousel-container,
+  #heroTravel .carousel-container {
     height: 35vh;
   }
 
@@ -535,7 +570,8 @@ j .navbar .dropdown ul a i {
     margin-bottom: 15px;
   }
 
-  #hero .carousel-container {
+  #hero .carousel-container,
+  #heroTravel .carousel-container {
     height: 35vh;
   }
 
@@ -1590,7 +1626,7 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs a:hover{
+.breadcrumbs a:hover {
   text-decoration: underline;
 }
 
@@ -1690,12 +1726,15 @@ section {
 # Speaker Page
 --------------------------------------------------------------*/
 .speaker-row {
-  display: flex; /* Make the row a flex container */
+  display: flex;
+  /* Make the row a flex container */
 }
 
 .speaker-description {
-  flex: 1; /* Allow description to take up remaining space */
-  text-align: justify; /* Justify the text within the description */
+  flex: 1;
+  /* Allow description to take up remaining space */
+  text-align: justify;
+  /* Justify the text within the description */
 }
 
 
@@ -1705,6 +1744,27 @@ section {
 
 .speaker-container h5 {
   justify-content: center;
-  display: flex; 
+  display: flex;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Travel Page
+--------------------------------------------------------------*/
+
+.acc-description {
+  flex: 1;
+  /* Allow description to take up remaining space */
+  text-align: justify;
+  /* Justify the text within the description */
+}
+
+.acc-container img {
+  border-radius: 5%;
+}
+
+.acc-container h5 {
+  /* justify-content: center; */
+  display: flex;
   text-align: center;
 }
