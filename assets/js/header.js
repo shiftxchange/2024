@@ -15,7 +15,6 @@ header.innerHTML = `
         <ul>
           <li><a href="abstracts.html">Call for Abstracts</a></li>
           <li><a href="submission.html">Submission Information</a></li>
-          <li><a href="journals.html">Associated Journals</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#"><span>Programme</span> <i class="bi bi-chevron-down"></i></a>
@@ -26,7 +25,12 @@ header.innerHTML = `
       </li>
       <li><a class="nav-link scrollto" href="registration.html">Registration</a></li>
       <li><a class="nav-link scrollto" href="committees.html">Committees</a></li>
-      <li><a class="nav-link scrollto" href="venue.html">Venue</a></li>
+      <li class="dropdown"><a href="#"><span>Venue</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li><a href="venue.html">Conference Venue</a></li>
+          <li><a href="travel.html">Accommodation & Transport</a></li>
+        </ul>
+      </li>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav>
