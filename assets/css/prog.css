@@ -65,7 +65,7 @@ h3 {
     grid-gap: 2rem;
     padding-bottom: 5rem;
     padding-top: 2rem;
-    min-width: 100vw;
+    /* min-width: 100vw; */
 }
 
 .schedule-stage::after {
