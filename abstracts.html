@@ -40,6 +40,35 @@
 </head>
 
 <body>
+
+  <style>
+    #footer {
+      bottom: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    #main {
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      #footer {
+        position: relative;
+      }
+
+      body {
+        margin-bottom: 120px;
+      }
+    }
+  </style>
+
   <!-- Header Script -->
   <script src="assets/js/header.js"></script>
   <!-- End Header Script -->
