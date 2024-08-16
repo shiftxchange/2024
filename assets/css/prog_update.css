@@ -24,29 +24,53 @@ body {
 
 .schedule-container {
     padding: 20px;
-    overflow-x: auto; /* Enables horizontal scrolling if content overflows */
-    overflow-y: hidden; /* Hides vertical overflow */
+    overflow-x: auto;
+    /* Enables horizontal scrolling if content overflows */
+    overflow-y: hidden;
+
     /* below fixed issue of overflowing of guide-slot_card */
-    /* white-space: nowrap;  */ 
+    /* white-space: nowrap;  */
 }
 
 .schedule-days {
     display: flex;
-    flex-direction: row; /* Ensures children are in a row */
-    flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    overflow-x: auto; /* Allows horizontal scrolling for days */
-    overflow-y: hidden; /* Hides vertical overflow */
+    flex-direction: row;
+    /* Ensures children are in a row */
+    flex-wrap: nowrap;
+    /* Prevents wrapping to the next line */
+    overflow-x: auto;
+    /* horizontal scrolling for days element */
+    overflow-y: hidden;
 }
 
 .schedule-day {
-    display: inline-block; /* Keeps elements in a row and respects width */
+    display: inline-block;
+    /* Keeps elements in a row and respects width */
     margin: 0 10px;
-    min-width: 300px; /* Ensures a minimum width for better readability */
-    vertical-align: top; /* Aligns items at the top */
+    min-width: 300px;
+    /* Ensures a minimum width for better readability */
+    vertical-align: top;
+    /* Aligns items at the top */
 }
 
-.schedule-stage {
+/* .schedule-stage {
     margin-bottom: 20px;
+} */
+
+
+.schedule-stage {
+    /* display: grid; */
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+    /* min-width: 100vw; */
+}
+
+.schedule-stage::after {
+    content: "";
+    width: var(--padding);
 }
 
 .schedule-stage__title p {
@@ -60,21 +84,26 @@ body {
 
 .guide-slot {
     display: flex;
-    align-items: center; /* Centers items vertically in the container */
+    align-items: center;
+    /* Centers items vertically in the container */
     margin-bottom: 15px;
 }
 
 .time-container {
-    flex: 0 0 100px; /* Fixed width for the time container */
-    padding-right: 10px; /* Space between time and card */
+    flex: 0 0 100px;
+    padding-right: 10px;
+    /* Space between time and card */
     display: flex;
-    align-items: center; /* Vertically centers time within its container */
-    justify-content: center; /* Horizontally centers time within its container */
+    align-items: center;
+    /* Vertically center */
+    justify-content: center;
+    /* Horizontally center */
 }
 
 
 .guide-slot_card-container {
-    flex: 1; /* Takes the remaining space */
+    flex: 1;
+    /* Takes the remaining space in the container */
 }
 
 .guide-slot {
@@ -82,7 +111,7 @@ body {
 }
 
 .day-color {
-    color:gray ;
+    color: gray;
 }
 
 .guide-slot_card {
@@ -92,9 +121,11 @@ body {
     color: #DADEDF;
     background: rgb(46, 26, 70, 0.85);
     cursor: pointer;
-    overflow: hidden; /* Ensures that overflow content is hidden */
-    word-wrap: break-word; /* Breaks long words to prevent overflow */
-    box-sizing: border-box; /* Includes padding and border in width and height */
+    overflow: hidden;
+    word-wrap: break-word;
+    /* Breaks long words to prevent overflow */
+    box-sizing: border-box;
+    /* Includes padding and border in width and height */
 }
 
 .guide-slot_card:hover {
@@ -112,21 +143,22 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    html {
-        font-size: 50%;
-    }
 
     .schedule-container {
-        overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+        overflow-x: auto;
+        /* Ensures horizontal scrolling */
     }
-    
+
     .schedule-days {
-        flex-direction: row; /* Ensures days are in a single row */
+        flex-direction: row;
     }
 
     .schedule-day {
-        display: inline-block; /* Keeps days in a row and respects width */
-        width: 300px; /* Ensures each day takes fixed width */
-        box-sizing: border-box; /* Includes padding and border in width */
+        display: inline-block;
+        /* Keeps days in a row and respects width */
+        width: 300px;
+        /* sets day to fixed width */
+        box-sizing: border-box;
+        /* Includes padding and border in width */
     }
 }
