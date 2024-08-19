@@ -22,6 +22,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.venue {
+    font-size: 80%;
+}
+
 .schedule-container {
     padding: 20px;
     overflow-x: auto;
@@ -93,7 +97,7 @@ body {
     flex: 0 0 100px;
     padding-right: 10px;
     /* Space between time and card */
-    display: flex;
+    display: inline-table;
     align-items: center;
     /* Vertically center */
     justify-content: center;
