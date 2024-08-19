@@ -166,3 +166,46 @@ body {
         /* Includes padding and border in width */
     }
 }
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facilitator {
+    flex: 1;
+    text-align: center;
+}
+
+.details {
+    flex: 2;
+}
+
+/* Start of FAQ Dropdown Styles */
+/* .faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.faq-answer {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+} */
+/* End of FAQ Dropdown Styles */

@@ -1417,13 +1417,13 @@ section {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #ef6603;
+  font-family: #2e1a46;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #bd5102;
+  color: rgb(46, 26, 70);
   transition: 0.3s;
 }
 
@@ -1448,7 +1448,7 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #ef6603;
+  color: rgb(46, 26, 70);
 }
 
 .faq .faq-list .collapsed .icon-show {
