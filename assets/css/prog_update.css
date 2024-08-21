@@ -167,7 +167,7 @@ body {
     }
 }
 
-.faq-content {
+/* .faq-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,9 +178,37 @@ body {
     text-align: center;
 }
 
+.engagement {
+    flex: 2;
+}
+
+.details {
+    flex: 3;
+} */
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack rows vertically */
+}
+
+.row-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Space between rows */
+}
+
+.facilitator {
+    flex: 1;
+    text-align: center;
+}
+
 .details {
     flex: 2;
 }
+
 
 /* Start of FAQ Dropdown Styles */
 /* .faq-item {
