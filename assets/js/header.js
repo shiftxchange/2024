@@ -22,6 +22,7 @@ header.innerHTML = `
         <ul>
           <li><a href="speakers.html">Speakers</a></li>
           <li><a href="programme.html">Full Programme</a></li>
+          <li><a href="assets/docs/Conference Programme.pdf" target="_blank" rel="noopener noreferrer">Download Conference Programme</a></li>
         </ul>
       </li>
       <li><a class="nav-link scrollto" href="registration.html">Registration</a></li>
